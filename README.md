@@ -29,3 +29,4 @@
 ### Resources
 
 - [Canva](https://www.canva.com/) - to create logo
+- [Font Awesome 4](https://fontawesome.com/) - icons

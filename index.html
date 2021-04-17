@@ -1,20 +1,43 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
         <Title>Leah's Bakery</Title>
+
     </head>
         <body>
-            <div class="banner">
-                <div class="navbar">
-                    <img src="./images/logo.png" class="logo">
-                    <ul>
-                        <li><a href="#"></a>Breakfast</li>
-                        <li><a href="#"></a>Entrees</li>
-                        <li><a href="#"></a>Snacks</li>
-                        <li><a href="#"></a>Bakery</li>
-                        <li><a href="#"></a>About</li>
-                    </ul>
+            <section class="header">
+                <nav>
+                    <a href="#"><img src="./images/logo.png" class="logo" alt="logo"></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                            <ul>
+                                <li><a href="./pages/breakfast.html">Breakfast</a></li>
+                                <li><a href="./test.html">Entrees</a></li>
+                                <li><a href="#">Snacks</a></li>
+                                <li><a href="#">Keto</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </div>
+                        <i class="fa fa-bars" onclick="showMenu()"></i>
+                    </nav>
+                <div class="text-box" id="textBox">
+                    <h1>MAKE AMAZING FOOD</h1>
+                    <p>Surprise your friends and family members with fun and easy to make food,<br> that will bring joy to all.</p>
                 </div>
-            </div>
+            </section>
+            <!-- Toogle hamburger menu for mobile devices -->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+
+                let showMenu = () => { 
+                    navLinks.style.right = "0"
+                    textBox.style.right = "-200px"
+                }
+
+                let hideMenu = () => navLinks.style.right = "-200";
+
+            </script>
         </body>
 </html>
