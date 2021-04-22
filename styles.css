@@ -4,15 +4,6 @@
     font-family: sans-serif;
 }
 
-.header {
-    width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../images/dinner.jpg");
-    background-size: cover;
-    background-position:center;
-    position: relative;
-}
-
 nav {
     width: 92%;
     padding: 2% 0;
@@ -45,6 +36,7 @@ nav {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 16px;
     bottom: -5px;
 }
@@ -159,13 +151,13 @@ nav .fa {
     }
   }
 
-@media screen and (min-width: 0px) and (max-width: 302px) {
+@media screen and (min-width: 0px) and (max-width: 320px) {
     .logo {
         width: 75px;
     }
 }
 
-/* recipes */
+/* recipe section*/
 
 .recipes {
    width: 80%;
@@ -217,8 +209,12 @@ h3 {
     width: 90%
 }
 
-@media(max-width: 700px) {
+@media(max-width: 758px) {
     .row {
         flex-direction: column;
     }
+}
+
+footer {
+    text-align: center;
 }
