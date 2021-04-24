@@ -1,1 +1,23 @@
+h1 {
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
 
+p {
+    color: black;
+}
+
+.recipes {
+    padding-top: 0 !important;
+}
+
+div#navLinks {
+    height: -webkit-fill-available;
+}
+
+@media(max-width: 758px) {
+    .row {
+        flex-direction: column;
+    }
+}
